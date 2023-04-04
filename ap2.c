@@ -11,6 +11,7 @@ void main()
     list[1] = 11; // 정수형 배열의 1번째 인덱스 위치에 11 대입
 
     plist[0] = (int*)malloc(sizeof(int)); // 정수형 포인터 배열의 0번째 인덱스 위치에 동적할당
+    // (첫번째 인덱스는 해당 동적할당된 힙의 주소를 저장할 것임)
 
     printf("list[0] \t= %d\n", list[0]); // 10 출력
     printf("list \t\t= %p\n", list); // list의 주솟값 출력 
@@ -21,8 +22,12 @@ void main()
     printf("list + 3 \t= %p\n", list+3); // list+3의 주솟값 출력. 윗줄에 출력된 주솟값에서 4바이트 뒤로 간 주소 출력
     printf("list + 4 \t= %p\n", list+4); // list+4의 주솟값 출력. 윗줄에 출력된 주솟값에서 4바이트 뒤로 간 주소 출력
     printf("&list[4] \t= %p\n", &list[4]); // list+4의 주솟값 출력. 윗줄의 주솟값(list+4의 주솟값)과 동일.
-
+    
+    
     free(plist[0]); // free.
+
+    printf("\n[----- [최상영]   [2022041062]  -----]\n");
+
 }
 
 // 프로그램 설명 : ap1.c에서, 배열의 메모리 구성에 더 집중하여 살펴보는 프로그램.

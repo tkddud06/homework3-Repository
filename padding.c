@@ -4,7 +4,7 @@ struct student { // student라는 구조체 정의
     char lastName[13]; // 13바이트
     int studentId; // 4바이트
     short grade; // 2바이트
-}; // 원래대로라면, 다 합쳐서 13 + 4 + 2 = 19바이트가 나올 것이라고 추정할 수 있지만, padding에 의하여, 16 + 4 + 4 가 되어, 실제로 student는 총 24바이트 크기의 구조체가 된다.
+}; // 원래대로라면, 다 합쳐서 13 + 4 + 2 = 19바이트가 나올 것이라고 추정할 수 있지만, gcc 컴파일러의 padding에 의하여, 16 + 4 + 4 가 되어, 실제로 student는 총 24바이트 크기의 구조체가 된다.
 
 int main()
 {

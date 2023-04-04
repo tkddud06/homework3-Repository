@@ -49,7 +49,7 @@ int main()
 
     // 아래는 위 기능을 실제로 작동 가능하도록 코딩한 부분이다.
 
-    if(st3.lastName == st2.lastName && st3.grade == st2.grade && st3.studentId == st2.studentId) // 작동이 가능하게 하려면, 구조체의 각 요소를 불러와, 직접 비교해주어야 한다.
+    if(st3.lastName == st2.lastName && st3.grade == st2.grade && st3.studentId == st2.studentId) // 작동이 가능하게 하려면, 구조체의 각 멤버 변수를 불러와, 직접 비교해주어야 한다.
     {
         printf("equal\n");
     }
@@ -63,4 +63,4 @@ int main()
     return 0;
 }
 
-// 프로그램 설명 : 구조체를 어떻게 정의할 수 있는지와 typedef의 사용에 대해 student1과 student2를 통해 보여주고 있고, 출력들을 통해 어떻게 구조체의 요소에 접근하는지 보여준다. 그리고 구조체를 구조체에 대입할 수 있음을 보여준다. 또, 구조체를 비교할때는 어떻게 해야하는지 보여준다.
+// 프로그램 설명 : 구조체를 어떻게 정의할 수 있는지와 typedef의 사용에 대해 student1과 student2를 통해 보여주고 있고, 출력들을 통해 어떻게 구조체의 멤버 변수에 접근하는지 보여준다. 그리고 구조체를 구조체에 대입할 수 있음을 보여준다. 또, 구조체를 비교할때는 어떻게 해야하는지 보여준다.
